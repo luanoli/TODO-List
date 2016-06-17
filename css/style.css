@@ -1,3 +1,9 @@
 body{
     background-color: #eeeeee !important;
 }
+
+.am-position{
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+}
