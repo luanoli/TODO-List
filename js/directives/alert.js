@@ -4,9 +4,12 @@
 
 angular.module('app.directives').directive('alertMsg', function(){
     return {
-        templateUrl: alert.html,
+        templateUrl: 'js/directives/alert.html',
         replace: true,
         scope: true,
-        restrict: E
+        restrict: 'E',
+        link: function(scope, element,attrs, ctrl){
+            scope.salvar();
+        }
     };
 });
