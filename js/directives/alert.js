@@ -8,8 +8,14 @@ angular.module('app.directives').directive('alertMsg', function(){
         replace: true,
         scope: true,
         restrict: 'E',
-        link: function(scope, element,attrs, ctrl){
-            scope.salvar();
+        link: function(scope, element, attrs, ctrl){
+            scope.$watchCollection('alertMessage', function(){
+                if(scope.alertMessage == 1){
+                    element.show();
+                }else{
+                    element.hide();
+                }
+            });
         }
     };
 });
