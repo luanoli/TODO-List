@@ -1,8 +1,8 @@
 # TODO-List
 
-## Intallation
+## Instalação
 
-Run
+No diretório raiz execute:
 ```
 bower install
 ```
